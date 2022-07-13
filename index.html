@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <title>Signup Form</title>
+  </head>
+  <body>
+   <div class="container">
+    <form>
+     <P>
+      <label for="name">*Full Name :</label>
+   
+        <input type="text" name="fullname" id="name" placeholder="Please Enter Your Full Name" required   tabindex="1"/>
+      
+    </P>
+     
+    
+      <P>
+      <label for="email">*Email :</label>
+       
+        <input type="email" name="email" id="email" placeholder="Please Enter Your Email"  tabindex="2" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" required />
+   
+    </P>
+   
+   
+    <P>
+      <label for="password">*Password :</label>
+      
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Please Enter Your Password"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+          required
+          tabindex="3"
+        />
+   
+    </P>
+      
+  
+  
+    <P>
+      <label for="phone">*Phone Number :</label>
+        
+        <input type="tel" name="phone" id="phone" max="8"   tabindex="4" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required />
+     
+    </P>
+  
+    
+    <P>
+      <label for="date"> Date of birth :</label>
+       
+        <input type="date" name="date" id="date"  placeholder="Date of birth"  tabindex="5" />
+          
+    </P>
+    
+<P>
+      <label for="country">  Select Country :</label>
+      
+        <select name="country" id="country"   tabindex="6">
+            
+          <option value="" disabled selected>MENA region countries</option>
+          <option >Palestine</option>
+          <option >Algeria</option>
+          <option>Bahrain</option>
+          <option>Egypt</option>
+          <option>Iran</option>
+          <option>Iraq</option>
+          <option>Jordan</option>
+          <option>Kuwait</option>
+          <option>Lebanon</option>
+          <option>Libya</option>
+          <option>Morocco</option>
+          <option>Oman</option>
+          <option>Qatar</option>
+          <option>Saudi Arabia</option>
+          <option>Syria</option>
+          <option>Tunisia</option>
+          <option>United Arab Emirates</option>
+          <option>Yemen</option>
+        </select>
+     
+    </P>
+     
+
+    </P>
+<P>
+      <label>
+        Plan :
+     
+
+        <input type="radio" id="Free" name="plan" value="Free"  tabindex="7" />
+        <label for="Free">Free</label>
+     
+        <input type="radio" id="Pro" name="plan" value="Pro" />
+        <label for="Pro">Pro</label>
+      
+     </label>
+    </P>
+   
+
+        
+    <P class="agree">
+        <input type="checkbox" value="checkbox" tabindex="8"  required/> I agree to terms and conditions
+    </P>
+       
+  
+  
+    <P >
+        <input type="submit" class="btn" value="Sign Up">
+
+    </P>
+    </form>
+   </div>
+  </body>
+</html>

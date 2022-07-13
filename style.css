@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(231, 231, 239);
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+form {
+  padding: 25px;
+  border-radius: 7px;
+  width: 500px;
+  background-color: white;
+  box-shadow: -3px 50px 400px 68px rgba(227,227,78,0.44);
+-webkit-box-shadow: -3px 50px 400px 68px rgba(227,227,78,0.44);
+-moz-box-shadow: -3px 50px 400px 68px rgba(234, 234, 106, 0.44);
+  height: 600px;
+
+}
+
+p {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+select {
+  border-radius: 5px;
+  padding: 10px;
+  flex: 1;
+ background-color: rgb(248, 248, 221);
+}
+
+
+
+.agree {
+  justify-content: flex-start;
+  gap: 30px;
+}
+label {
+  flex: 1;
+}
+
+input[type="submit"] {
+    margin-top: 15px;
+    background-color: #fff314;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    color: #4d9cd6;
+    border: cadetblue;
+  }
+  input[type="submit"]:hover {
+    background-color: rgb(170, 172, 199);
+    color: yellow;
+  } 
+input:valid {
+  border: 1px solid rgb(69, 141, 69);
+}
+input:invalid {
+  border: 1px solid rgb(209, 111, 111);
+}
